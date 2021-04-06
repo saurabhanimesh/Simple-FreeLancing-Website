@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Dream</title>
+    <link rel="styleSheet" href="dreamcss.css">
+    <link rel="icon" href="iconlogo.png">
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="preload">
+
+    <nav class="navbar" id="navbarid">
+        <div class="nav-list" id="navid">
+            <li class="item" id="item1"><a href=#home>Home</a></li>
+            <li class="item" id="item2"><a href=#service>Services</a></li>
+            <li class="item" id="item3"><a href=#demand>Demand Service</a></li>
+            <li class="item" id="item4"><a href="#about">About Us</a></li>
+        </div>
+        <div class="smalllogo">
+            <img src="vv.gif" alt="logo">
+        </div>
+        <div class="burger" id="burger">
+            <div class="line" id="line"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+    </nav>
+
+
+
+    <section class="welcome" id="home">
+        <h1>Welcome</h1>
+        <h2>Dreamers</h2>
+    </section>
+
+    <section class="Services" id="service">
+        <h1>What We Offer?</h1>
+        <div class="featureD">
+            <div class="feature">
+                <h2 class="featurehead">Features</h2>
+                <ul class="feature-list">
+                    <li>Web Development/Designing and Hosting</li>
+                    <li>Android App Development/Designing</li>
+                    <li>Website and Android App Maintenance</li>
+                    <li>Digital Marketing</li>
+                    <li>Animation and Editing</li>
+                </ul>
+            </div>
+            <div class="feature2">
+                <h2 class="besthead">Why We Are Best</h2>
+                <ul class="best-list">
+                    <li>Lowest Price</li>
+                    <li>Best Quality Work</li>
+                    <li>Fast Service</li>
+                    <li>Best Customer Support</li>
+                    <li>We Give Value To Our Customers</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="demand" id="demand">
+        <h1 class="reqhead">Request Your Need</h1>
+        <div class="frm" id="frm">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone">
+            <textarea name="text" id="textarea" class="textarea)" cols="30" rows="10"
+                placeholder="Your Requirement"></textarea>
+            <button class="requestsubmit" id="requestsubmit">Submit</button>
+            <p class=thankyoumessage id="thankyoumessage1">Your Request Has Been Sent , You will be Contacted Very Soon.
+            </p>
+            <p class=thankyoumessage id="thankyoumessage2">Thanks For Connecting With Us. Reload the Page to Request
+                More</p>
+        </div>
+    </section>
+
+    <section class="contact" id="about">
+        <h1 class="contacthead">About Us</h1>
+        <div class="aboutme">
+            <img src="me.jpg" alt="owner">
+            <div class="description">
+                <h2>Description</h2>
+                <p> We provide you the best Free-Lancing Serive in city Patna. We charge you with the 
+                    least price for any project and with the bestest quality in Patna. This Service has 
+                    been started by Mr. Saurabh Animesh who is currently Studying in Birla Institute of 
+                    Technology. The Motive of this Organization is to Digitalize the whole city Patna by 
+                    providing them with best Website development,Android Development, Digital Marketing, 
+                    Animation and Editing Services within the city Patna with the least expense possible.
+                </p>
+            </div>
+            <div class="contactinfo">
+                <p id="phonekaro">Contact : +91 9065540342</p>
+                <p id="emailus">Email : mydevelopersdream@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <script src="dreamjs.js"></script>
+    <script src="backendjs.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Preloader
+            preloaderFadeOutTime = 500;
+            function hidePreloader() {
+                var preloader = $('.spinner-wrapper');
+                preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+        });
+    </script>
+</body>
+
+<div class="spinner-wrapper">
+    <div class="spinner"></div>
+</div>
+
+</html>

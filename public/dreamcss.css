@@ -1,0 +1,2991 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+  
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ff6347;
+    z-index: 999999;
+    }
+
+body{
+    background-image: url('b11111.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    /* width: 100%; */
+    background-attachment:fixed; 
+    /* top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    /* flex-wrap: wrap; */
+}
+
+.nav-list{
+    display: flex;
+    text-decoration: none;
+    /* flex-wrap: wrap; */
+}
+
+.smalllogo img{    
+ margin: 30px;
+ width: 400px;
+ /* transform: translateX(250px) translateY(4px); */
+ }
+
+ .smalllogo{
+     width: 40%;
+     text-align: right;
+ }
+
+
+.nav-list li{
+    margin: 40px;
+    /* transform: translateY(10px); */
+    list-style: none;
+    font-family: 'Patua One', cursive;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  font-size: 30px;
+  color: #667789;
+}
+
+.nav-list li a:hover{
+    
+    color: #04cc3c;
+}
+
+
+
+/*.navbar::before{
+    content: "";
+    position: absolute;
+    background: url('b1.jpg') no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    z-index:-1;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+}*/
+
+
+.welcome{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1{
+    
+    color: white;
+    /* z-index: 1; */
+    /* position: absolute; */
+    font-size: 120px;
+    font-family: 'Patua One', cursive;
+    /* transform: translateY(50px); */
+    animation-name: welcome1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes welcome1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.welcome h2{
+    color: white;    /*#fa8f05*/
+    z-index: 1;
+    opacity: 0;
+    /* position: absolute; */
+    font-size: 60px;
+    font-family: 'Patua One', cursive;
+    /* transform: translateY(150px); */
+    animation-name: welcome2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+@keyframes welcome2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.Services{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    /* padding:40px; */
+
+}
+
+.Services h1{
+    color: white;    /*#fa8f05*/
+    /* z-index: 1; */
+    font-size: 60px;
+    font-family: 'Patua One', cursive;
+    transform: translateY(70px);
+    /* position: relative;     */
+    /* top: -140px; */
+    padding:140px;
+    font-family: 'Patua One', cursive;
+    /* padding:60px; */
+
+    /* transform: translateY(350px) translateX(50vw); */
+    /*animation-name: welcome2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 2s;*/
+}
+
+.Services .featureD .feature {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.Services .featureD .feature2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.Services .featureD .feature h2{
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.Services .featureD .feature ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.Services .featureD .feature2 h2{
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.Services .featureD .feature2 ul{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.Services .featureD{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Patua One', cursive; 
+    /* font-weight: 100; */
+    border: 4px solid #04cc3c;
+    border-radius: 80px;
+    background: black;
+    
+    
+    /* padding:60px; */
+}
+
+ .demand{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.demand .frm{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 4px solid #04cc3c;
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;    
+    padding: 50px; 
+}
+
+.demand .frm input{
+    width: 500px;
+    height: 40px;
+    /* padding: 10px; */
+    margin: 10px;
+    background: none;
+    font-family: 'Patua One', cursive;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.demand .frm textarea{
+    width: 500px;
+    height: 60px;
+    padding: 20px;
+    /* margin: 20px; */
+    background: none;
+    font-family: 'Patua One', cursive;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+
+.demand h1{
+    color: white;
+    font-family: 'Patua One', cursive;
+    font-size: 50px;
+    padding:60px;
+}
+
+.thankyoumessage{
+    display: none;
+    color: white;
+    font-family: 'Patua One', cursive;
+    /* justify-content: center;
+    align-items: center; */
+    font-size: large;
+}
+
+.requestsubmit{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: medium;
+    font-family: 'Patua One', cursive;
+    background: none;
+    color: white;
+    padding: 30px;
+} 
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    color: white;
+    font-family: 'Patua One', cursive;
+    font-size: 50px;
+    padding:60px;
+}
+
+.contact .aboutme{
+    display: flex;
+    flex-direction: row;
+
+    border: 4px solid rgb(4, 204, 60);
+    border-radius: 80px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.contact .aboutme img{
+    height:300px;
+    width: 300px;
+    margin: 30px;
+    border: 2px solid #fa8f05;
+    border-radius: 50px;
+}
+
+.contact .aboutme .description h2{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Patua One', cursive;
+}
+
+.contact .aboutme .description{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(4, 204, 60, 0.3);
+    color: white;
+    width: 500px;
+    margin: 30px;
+}
+
+.contact .aboutme .description p{
+    color: white;
+    font-size: 20px;
+
+}
+
+.contact .aboutme .contactinfo{
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin: 2px;
+}
+
+.contact .aboutme .contactinfo p{
+    color: white;
+    font-size: 25px;
+    padding:15px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px)
+{
+    .navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        text-decoration: none;
+        /* flex-wrap: wrap; */
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 400px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         width: 40%;
+         text-align: right;
+     }
+    
+    
+    .nav-list li{
+        margin: 30px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 50px;
+        padding:60px;
+    }
+    
+    .contact .aboutme{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 25px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+    }
+    
+    .contact .aboutme img{
+        height:300px;
+        width: 300px;
+        margin: 30px;
+        border: 2px solid #fa8f05;
+        border-radius: 50px;
+    }
+    
+    .contact .aboutme .description h2{
+        color: white;
+        font-size: 40px;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .contact .aboutme .description{
+        color: white;
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo{
+        margin: 50px;
+    }
+    
+    .contact .aboutme .contactinfo p{
+        padding:15px;
+    }
+
+}
+
+@media only screen and (max-width: 1270px)
+{
+    .navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        text-decoration: none;
+        /* flex-wrap: wrap; */
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 400px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         width: 40%;
+         text-align: right;
+     }
+    
+    
+    .nav-list li{
+        margin: 25px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+}
+
+@media only screen and (max-width: 1200px)
+{
+    .navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        text-decoration: none;
+        /* flex-wrap: wrap; */
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 400px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         width: 40%;
+         text-align: right;
+     }
+    
+    
+    .nav-list li{
+        margin: 20px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+}
+
+@media only screen and (max-width: 1134px)
+{
+    .navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        text-decoration: none;
+        /* flex-wrap: wrap; */
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 400px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         width: 40%;
+         text-align: right;
+     }
+    
+    
+    .nav-list li{
+        margin: 15px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+}
+
+@media only screen and (max-width: 1068px)
+{
+    .navbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        text-decoration: none;
+        /* flex-wrap: wrap; */
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 400px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         width: 40%;
+         text-align: right;
+     }
+    
+    
+    .nav-list li{
+        margin: 10px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+}
+
+@media only screen and (max-width: 1024px)
+{
+
+    .welcome{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome h1{
+        
+        color: white;
+        /* z-index: 1; */
+        /* position: absolute; */
+        font-size: 120px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(50px); */
+        animation-name: welcome1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes welcome1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    
+    .welcome h2{
+        color: white;    /*#fa8f05*/
+        z-index: 1;
+        opacity: 0;
+        /* position: absolute; */
+        font-size: 60px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(150px); */
+        animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    
+    @keyframes welcome2{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    .navbar{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        position: static;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        order: 4;
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 400px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 40%;
+         text-align: right;
+         order :1;
+     }
+    
+    
+    .nav-list li{
+        margin: 25px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+    .burger{
+        cursor: pointer;
+        order:100; 
+    }
+    
+    .line{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 3px;
+    
+    }
+}
+
+@media only screen and (max-width : 712px)
+{
+
+    .demand{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .demand .frm{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;    
+        padding: 20px; 
+    }
+    
+    .demand .frm input{
+        width: 500px;
+        height: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    .demand .frm textarea{
+        width: 500px;
+        height: 60px;
+        padding: 20px;
+        /* margin: 20px; */
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    
+    .demand h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 50px;
+        padding:60px;
+    }
+    
+    .thankyoumessage{
+        display: none;
+        color: white;
+        font-family: 'Patua One', cursive;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: large;
+    }
+    
+    .requestsubmit{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: medium;
+        font-family: 'Patua One', cursive;
+        background: none;
+        color: white;
+        padding: 30px;
+    } 
+    .Services{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        /* padding:40px; */
+    }
+    
+    .Services h1{
+        color: white;    /*#fa8f05*/
+        /* z-index: 1; */
+        font-size: 50px;
+        font-family: 'Patua One', cursive;
+        transform: translateY(70px);
+        /* position: relative;     */
+        /* top: -140px; */
+        padding:140px;
+        font-family: 'Patua One', cursive;
+        /* padding:60px; */
+    
+        /* transform: translateY(350px) translateX(50vw); */
+        /*animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 2s;*/
+    }
+    
+    .Services .featureD .feature {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature h2{
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+    }
+    
+    .Services .featureD .feature ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .Services .featureD .feature2 h2{
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+    }
+    
+    .Services .featureD .feature2 ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .Services .featureD{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Patua One', cursive; 
+        /* font-weight: 100; */
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        background: black;
+        
+        
+        /* padding:60px; */
+    }
+
+}
+
+@media only screen and (max-width:650px)
+{
+
+    .Services{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        /* padding:40px; */
+    }
+    
+    .Services h1{
+        color: white;    /*#fa8f05*/
+        /* z-index: 1; */
+        font-size: 40px;
+        font-family: 'Patua One', cursive;
+        transform: translateY(70px);
+        /* position: relative;     */
+        /* top: -140px; */
+        padding:140px;
+        font-family: 'Patua One', cursive;
+        /* padding:60px; */
+    
+        /* transform: translateY(350px) translateX(50vw); */
+        /*animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 2s;*/
+    }
+    
+    .Services .featureD .feature {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature h2{
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+    }
+    
+    .Services .featureD .feature ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .Services .featureD .feature2 h2{
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+    }
+    
+    .Services .featureD .feature2 ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .Services .featureD{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Patua One', cursive; 
+        /* font-weight: 100; */
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        background: black;
+        
+        
+        /* padding:60px; */
+    }
+
+    .demand{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .demand .frm{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;    
+        padding: 20px; 
+    }
+    
+    .demand .frm input{
+        width: 400px;
+        height: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    .demand .frm textarea{
+        width: 400px;
+        height: 60px;
+        padding: 20px;
+        /* margin: 20px; */
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    
+    .demand h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 40px;
+        padding:60px;
+    }
+    
+    .thankyoumessage{
+        display: none;
+        color: white;
+        font-family: 'Patua One', cursive;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: large;
+    }
+    
+    .requestsubmit{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: medium;
+        font-family: 'Patua One', cursive;
+        background: none;
+        color: white;
+        padding: 30px;
+    } 
+
+}
+
+@media only screen and (max-width: 570px)
+{
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 30px;
+        padding:60px;
+    }
+    
+    .contact .aboutme{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+    
+    .contact .aboutme img{
+        height:200px;
+        width: 200px;
+        margin: 30px;
+        border: 2px solid #fa8f05;
+        border-radius: 80px;
+    }
+    
+    .contact .aboutme .description h2{
+        color: white;
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .contact .aboutme .description{
+        color: white;
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo{
+        margin: 20px;
+    }
+    
+    .contact .aboutme .contactinfo p{
+        font-size: 20px;
+        display: flex;
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+        padding:15px;
+    }
+
+    .demand{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .demand .frm{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;    
+        padding: 20px; 
+    }
+    
+    .demand .frm input{
+        width: 300px;
+        height: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    .demand .frm textarea{
+        width: 300px;
+        height: 60px;
+        padding: 20px;
+        /* margin: 20px; */
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    
+    .demand h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 30px;
+        padding:60px;
+    }
+    
+    .thankyoumessage{
+        display: none;
+        color: white;
+        font-family: 'Patua One', cursive;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: large;
+    }
+    
+    .requestsubmit{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: medium;
+        font-family: 'Patua One', cursive;
+        background: none;
+        color: white;
+        padding: 30px;
+    } 
+
+    .Services{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        /* padding:40px; */
+    }
+    
+    .Services h1{
+        color: white;    /*#fa8f05*/
+        /* z-index: 1; */
+        font-size: 30px;
+        font-family: 'Patua One', cursive;
+        transform: translateY(70px);
+        /* position: relative;     */
+        /* top: -140px; */
+        padding:140px;
+        font-family: 'Patua One', cursive;
+        /* padding:60px; */
+    
+        /* transform: translateY(350px) translateX(50vw); */
+        /*animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 2s;*/
+    }
+    
+    .Services .featureD .feature {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature h2{
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+    }
+    
+    .Services .featureD .feature ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .Services .featureD .feature2 h2{
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+    }
+    
+    .Services .featureD .feature2 ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .Services .featureD{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Patua One', cursive; 
+        /* font-weight: 100; */
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        background: black;
+        
+        
+        /* padding:60px; */
+    }
+
+
+}
+
+@media only screen and (max-width:512px)
+{
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 30px;
+        padding:60px;
+    }
+    
+    .contact .aboutme{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+    
+    .contact .aboutme img{
+        height:200px;
+        width: 200px;
+        margin: 30px;
+        border: 2px solid #fa8f05;
+        border-radius: 80px;
+    }
+    
+    .contact .aboutme .description h2{
+        color: white;
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .contact .aboutme .description{
+        color: white;
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo{
+        margin: 50px;
+    }
+    
+    .contact .aboutme .contactinfo p{
+        padding:15px;
+    }
+    .welcome{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome h1{
+        
+        color: white;
+        /* z-index: 1; */
+        /* position: absolute; */
+        font-size: 100px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(50px); */
+        animation-name: welcome1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes welcome1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    
+    .welcome h2{
+        color: white;    /*#fa8f05*/
+        z-index: 1;
+        opacity: 0;
+        /* position: absolute; */
+        font-size: 40px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(150px); */
+        animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    
+    @keyframes welcome2{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+}
+
+@media only screen and (max-width:454px)
+{
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:60px;
+    }
+    
+    .contact .aboutme{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+    
+    .contact .aboutme img{
+        height:200px;
+        width: 200px;
+        margin: 30px;
+        border: 2px solid #fa8f05;
+        border-radius: 80px;
+    }
+    
+    .contact .aboutme .description h2{
+        color: white;
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .contact .aboutme .description{
+        color: white;
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo{
+        margin: 50px;
+    }
+    
+    .contact .aboutme .contactinfo p{
+        padding:15px;
+    }
+
+    .demand{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .demand .frm{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;    
+        padding: 20px; 
+    }
+    
+    .demand .frm input{
+        width: 200px;
+        height: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    .demand .frm textarea{
+        width: 200px;
+        height: 60px;
+        padding: 20px;
+        /* margin: 20px; */
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    
+    .demand h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:60px;
+    }
+    
+    .thankyoumessage{
+        display: none;
+        color: white;
+        font-family: 'Patua One', cursive;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: large;
+    }
+    
+    .requestsubmit{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: medium;
+        font-family: 'Patua One', cursive;
+        background: none;
+        color: white;
+        padding: 30px;
+    } 
+
+    .Services{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        /* padding:40px; */
+    }
+    
+    .Services h1{
+        color: white;    /*#fa8f05*/
+        /* z-index: 1; */
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+        transform: translateY(70px);
+        position: relative;     
+         top: -120px;
+        padding: 0px;
+        font-family: 'Patua One', cursive;
+        /* padding:60px; */
+    
+        /* transform: translateY(350px) translateX(50vw); */
+        /*animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 2s;*/
+    }
+    
+    .Services .featureD .feature {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature h2{
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .Services .featureD .feature ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .Services .featureD .feature2 h2{
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .Services .featureD .feature2 ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .Services .featureD{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Patua One', cursive; 
+        /* font-weight: 100; */
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        background: black;
+        
+        
+        /* padding:60px; */
+    }
+
+    .welcome{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome h1{
+        
+        color: white;
+        /* z-index: 1; */
+        /* position: absolute; */
+        font-size: 80px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(50px); */
+        animation-name: welcome1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes welcome1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    
+    .welcome h2{
+        color: white;    /*#fa8f05*/
+        z-index: 1;
+        opacity: 0;
+        /* position: absolute; */
+        font-size: 40px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(150px); */
+        animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    
+    @keyframes welcome2{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+
+
+}
+
+@media only screen and (max-width:410px)
+{
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:60px;
+    }
+    
+    .contact .aboutme{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    
+    .contact .aboutme img{
+        height:200px;
+        width: 200px;
+        margin: 30px;
+        border: 2px solid #fa8f05;
+        border-radius: 80px;
+    }
+    
+    .contact .aboutme .description h2{
+        color: white;
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .contact .aboutme .description{
+        color: white;
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo{
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo p{
+        font-size: 15px;
+        display: flex;
+        width: 250px;
+        justify-content: center;
+        align-items: centers;
+        padding:15px;
+    }
+
+
+    .demand{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .demand .frm{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;    
+        padding: 20px; 
+    }
+    
+    .demand .frm input{
+        width: 200px;
+        height: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    .demand .frm textarea{
+        width: 200px;
+        height: 60px;
+        padding: 20px;
+        /* margin: 20px; */
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    
+    .demand h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:60px;
+    }
+    
+    .thankyoumessage{
+        display: none;
+        color: white;
+        font-family: 'Patua One', cursive;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: large;
+    }
+    
+    .requestsubmit{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: medium;
+        font-family: 'Patua One', cursive;
+        background: none;
+        color: white;
+        padding: 30px;
+    } 
+
+    
+
+    .welcome{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome h1{
+        
+        color: white;
+        /* z-index: 1; */
+        /* position: absolute; */
+        font-size: 80px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(50px); */
+        animation-name: welcome1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes welcome1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    
+    .welcome h2{
+        color: white;    /*#fa8f05*/
+        z-index: 1;
+        opacity: 0;
+        /* position: absolute; */
+        font-size: 40px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(150px); */
+        animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    
+    @keyframes welcome2{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .navbar{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        position: static;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        order: 4;
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 300px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 40%;
+         text-align: right;
+         order :1;
+     }
+    
+    
+    .nav-list li{
+        margin: 25px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+    .burger{
+        cursor: pointer;
+        order:100; 
+    }
+    
+    .line{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 3px;
+    
+    }
+
+}
+
+@media only screen and (max-width:354px)
+{
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:60px;
+    }
+    
+    .contact .aboutme{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+        width: 220px;
+    }
+    
+    .contact .aboutme img{
+        height:200px;
+        width: 200px;
+        margin: 30px;
+        border: 2px solid #fa8f05;
+        border-radius: 80px;
+    }
+    
+    .contact .aboutme .description h2{
+        color: white;
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .contact .aboutme .description{
+        color: white;
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo{
+        
+        margin: 50px;
+    }
+    
+    .contact .aboutme .contactinfo p{
+        font-size: 13px;
+        display: flex;
+        width: 250px;
+        justify-content: center;
+        align-items: centers;
+        padding:15px;
+    }
+
+    
+
+    .demand{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .demand .frm{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;    
+        padding: 20px; 
+    }
+    
+    .demand .frm input{
+        width: 150px;
+        height: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    .demand .frm textarea{
+        width: 150px;
+        height: 60px;
+        padding: 20px;
+        /* margin: 20px; */
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    
+    .demand h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:60px;
+    }
+    
+    .thankyoumessage{
+        display: none;
+        color: white;
+        font-family: 'Patua One', cursive;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: large;
+    }
+    
+    .requestsubmit{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: medium;
+        font-family: 'Patua One', cursive;
+        background: none;
+        color: white;
+        padding: 30px;
+    } 
+
+
+
+    .welcome{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome h1{
+        
+        color: white;
+        /* z-index: 1; */
+        /* position: absolute; */
+        font-size: 60px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(50px); */
+        animation-name: welcome1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes welcome1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    
+    .welcome h2{
+        color: white;    /*#fa8f05*/
+        z-index: 1;
+        opacity: 0;
+        /* position: absolute; */
+        font-size: 30px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(150px); */
+        animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    
+    @keyframes welcome2{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .navbar{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        position: static;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        order: 4;
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 250px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 40%;
+         text-align: right;
+         order :1;
+     }
+    
+    
+    .nav-list li{
+        margin: 25px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+    .burger{
+        cursor: pointer;
+        order:100; 
+    }
+    
+    .line{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 3px;
+    
+    }
+
+}
+
+@media only screen and (max-width:300px)
+{
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:60px;
+    }
+    
+    .contact .aboutme{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+        width: 220px;
+        }
+    
+    .contact .aboutme img{
+        height:200px;
+        width: 200px;
+        margin: 30px;
+        border: 2px solid #fa8f05;
+        border-radius: 80px;
+    }
+    
+    .contact .aboutme .description h2{
+        color: white;
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .contact .aboutme .description{
+        color: white;
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo{
+        margin: 50px;
+    }
+    
+    .contact .aboutme .contactinfo p{
+        font-size: 12px;
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        align-items: centers;
+        padding:10px;
+    }
+
+    .demand{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .demand .frm{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;    
+        padding: 20px; 
+    }
+    
+    .demand .frm input{
+        width: 100px;
+        height: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    .demand .frm textarea{
+        width: 100px;
+        height: 60px;
+        padding: 20px;
+        /* margin: 20px; */
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    
+    .demand h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:0px;
+        transform: translateY(70px);
+        position: relative;     
+         top: -120px;
+    }
+    
+    .thankyoumessage{
+        display: none;
+        color: white;
+        font-family: 'Patua One', cursive;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: large;
+    }
+    
+    .requestsubmit{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: medium;
+        font-family: 'Patua One', cursive;
+        background: none;
+        color: white;
+        padding: 30px;
+    } 
+
+
+
+    .welcome{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome h1{
+        
+        color: white;
+        /* z-index: 1; */
+        /* position: absolute; */
+        font-size: 60px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(50px); */
+        animation-name: welcome1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes welcome1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    
+    .welcome h2{
+        color: white;    /*#fa8f05*/
+        z-index: 1;
+        opacity: 0;
+        /* position: absolute; */
+        font-size: 30px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(150px); */
+        animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    
+    @keyframes welcome2{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .navbar{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        position: static;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        order: 4;
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 250px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 40%;
+         text-align: right;
+         order :1;
+     }
+    
+    
+    .nav-list li{
+        margin: 25px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 20px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+    .burger{
+        cursor: pointer;
+        order:100; 
+    }
+    
+    .line{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 3px;
+    
+    }
+
+}
+
+
+@media only screen and (max-width:250px)
+{
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:60px;
+    }
+    
+    .contact .aboutme{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-wrap: wrap;
+        width: 210px;
+        padding: 5px;
+    }
+    
+    .contact .aboutme img{
+        height:200px;
+        width: 200px;
+        margin: 30px;
+        border: 2px solid #fa8f05;
+        border-radius: 80px;
+    }
+    
+    .contact .aboutme .description h2{
+        color: white;
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .contact .aboutme .description{
+        color: white;
+        width: 500px;
+        margin: 30px;
+    }
+    
+    .contact .aboutme .contactinfo{
+        margin: 15px;
+    }
+    
+    .contact .aboutme .contactinfo p{
+        font-size: 11px;
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        align-items: centers;
+        padding:10x;
+    }
+
+    .demand{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .demand .frm{
+        display: flex;
+        flex-direction: column;
+        width: 160px;
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;    
+        padding: 20px; 
+    }
+    
+    .demand .frm input{
+        width: 70px;
+        height: 40px;
+        /* padding: 10px; */
+        margin: 10px;
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    .demand .frm textarea{
+        width: 70px;
+        height: 60px;
+        padding: 20px;
+        /* margin: 20px; */
+        background: none;
+        font-family: 'Patua One', cursive;
+        color: white;
+        border: none;
+        outline: none;
+    }
+    
+    
+    .demand h1{
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 20px;
+        padding:0px;
+        transform: translateY(70px);
+        position: relative;     
+         top: -120px;
+    }
+    
+    .thankyoumessage{
+        display: none;
+        color: white;
+        font-family: 'Patua One', cursive;
+        /* justify-content: center;
+        align-items: center; */
+        font-size: large;
+    }
+    
+    .requestsubmit{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: medium;
+        font-family: 'Patua One', cursive;
+        background: none;
+        color: white;
+        padding: 30px;
+    } 
+
+
+
+    .welcome{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome h1{
+        
+        color: white;
+        /* z-index: 1; */
+        /* position: absolute; */
+        font-size: 40px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(50px); */
+        animation-name: welcome1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes welcome1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    
+    .welcome h2{
+        color: white;    /*#fa8f05*/
+        z-index: 1;
+        opacity: 0;
+        /* position: absolute; */
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+        /* transform: translateY(150px); */
+        animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    
+    @keyframes welcome2{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .navbar{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        position: static;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        order: 4;
+    }
+    
+    .smalllogo img{    
+     margin: 30px;
+     width: 200px;
+     /* transform: translateX(250px) translateY(4px); */
+     }
+    
+     .smalllogo{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 40%;
+         text-align: right;
+         order :1;
+     }
+    
+    
+    .nav-list li{
+        margin: 25px;
+        /* transform: translateY(10px); */
+        list-style: none;
+        font-family: 'Patua One', cursive;
+    }
+    
+    .nav-list li a{
+      text-decoration: none;
+      font-size: 15px;
+      color: #667789;
+    }
+    
+    .nav-list li a:hover{
+        
+        color: #04cc3c;
+    }
+    .burger{
+        cursor: pointer;
+        order:100; 
+    }
+    
+    .line{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 3px;
+    
+    }
+
+    .Services{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        /* padding:40px; */
+    }
+    
+    .Services h1{
+        color: white;    /*#fa8f05*/
+        /* z-index: 1; */
+        font-size: 20px;
+        font-family: 'Patua One', cursive;
+        transform: translateY(70px);
+        position: relative;     
+         top: -120px;
+        padding: 0px;
+        font-family: 'Patua One', cursive;
+        /* padding:60px; */
+    
+        /* transform: translateY(350px) translateX(50vw); */
+        /*animation-name: welcome2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 2s;*/
+    }
+    
+    .Services .featureD .feature {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .Services .featureD .feature h2{
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .Services .featureD .feature ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .Services .featureD .feature2 h2{
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .Services .featureD .feature2 ul{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .Services .featureD{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Patua One', cursive; 
+        /* font-weight: 100; */
+        border: 4px solid #04cc3c;
+        border-radius: 80px;
+        background: black;
+        
+        
+        /* padding:60px; */
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
